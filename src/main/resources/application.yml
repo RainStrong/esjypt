@@ -1,34 +1,34 @@
-# ÏîÄ¿Ïà¹ØÅäÖÃ
+# é¡¹ç›®ç›¸å…³é…ç½®
 fuce:
-  #Ãû³Æ
+  #åç§°
   name: esjypt
-  #°æ±¾
+  #ç‰ˆæœ¬
   version: 1.0
-  #°æÈ¨Äê·İ
+  #ç‰ˆæƒå¹´ä»½
   copyrightYear: 2019
 #tomcat config
-server :
-  port : 8080
-  ##ÏîÄ¿Ãû×ÖÅäÖÃ
-  servlet :
-    context-path : /esjypt
-  tomcat :
-    max-threads : 128
-    min-spare-threads : 5
-    uri-encoding : UTF-8
-    #shiro ±¨´íĞŞ¸ÄµÄµØ·½
+server:
+  port: 8080
+  ##é¡¹ç›®åå­—é…ç½®
+  servlet:
+    context-path: /esjypt
+  tomcat:
+    max-threads: 128
+    min-spare-threads: 5
+    uri-encoding: UTF-8
+    #shiro æŠ¥é”™ä¿®æ”¹çš„åœ°æ–¹
     max-connections: 200000
     max-http-post-size: 9000000
-spring :
-  # »·¾³ dev|test|prod
-  profiles :
-    active : dev
+spring:
+  # ç¯å¢ƒ dev|test|prod
+  profiles:
+    active: dev
   jackson:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss
-mybatis :
-  mapperLocations : classpath*:mapper/*.xml
-  executor-type : reuse
-  type-aliases-package : com.*.model
-  configuration :
-    map-underscore-to-camel-case : true
+mybatis:
+  mapperLocations: classpath*:mapper/*.xml
+  executor-type: reuse
+  type-aliases-package: com.*.model
+  configuration:
+    map-underscore-to-camel-case: true
