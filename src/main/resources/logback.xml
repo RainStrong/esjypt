@@ -37,7 +37,7 @@
     </logger>
 
     <root level="INFO">
-        <appender-ref ref="console" />
+        <!--<appender-ref ref="console" />-->
         <!--<appender-ref ref="LOG-ALL" />-->
         <!--<appender-ref ref="LOG-INFO" />-->
         <!--<appender-ref ref="LOG-ERROR" />-->
