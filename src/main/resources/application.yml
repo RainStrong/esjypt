@@ -32,3 +32,12 @@ mybatis:
   type-aliases-package: com.*.model
   configuration:
     map-underscore-to-camel-case: true
+  #自动更新表
+  table:
+    auto: true
+  #实体类扫描地址
+  model:
+    pack: com.esjypt.entity
+  #数据库类型
+  database:
+    type: mysql
